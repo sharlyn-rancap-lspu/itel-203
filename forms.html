@@ -8,8 +8,11 @@
             <style>
                 body
                 {
-    
-                background-color: lightcyan;
+                background-image: url('download (2).jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                
                 }
                 h1
                 { 
@@ -42,6 +45,42 @@
                     font-family: Courier New;
                     text-indent: .5em;
                 }
+                .side
+                {
+                  transform: skew(10deg); 
+                  background-color: linen; 
+                  width: 1000px; 
+                  height: 100vh; 
+                  float: right;
+                  opacity: 0.8;
+                }
+                .side h2 
+                {
+                    transform: skewX(-10deg);
+                    text-align: center;
+                    font-size: 80px;
+                    color: palevioletred;
+                    font-family: Courier New;
+                    margin-top: 280px;
+                    
+                }
+                .side h3 
+                {
+                    transform: skewX(-10deg);
+                    text-align: justify;
+                    font-size: 60px;
+                    color: palevioletred;
+                    font-family: Courier New;
+                    margin-top: 100px;
+                    
+                }
+                .top
+                {
+                  overflow: hidden;
+                  width: 100%;
+                  text-align: center;   
+                }
+                
                
                 .out
                 {
@@ -50,12 +89,15 @@
                      border: 2px solid;
                      margin: 5px auto;
                      border-color: lightseagreen;
+                     opacity: 0.8;
                      border-radius: 10px;
                      text-align: justify;
-                     display: flex;
-                     justify-content: center;
-
-                    
+                     position: relative;
+                     flex: 1 0 0;
+                     margin-left: 250px;
+                     margin-top: 100px;
+                     margin-bottom: 30px;
+      
                 }
                 
               
@@ -80,29 +122,36 @@
             </style>
     </head>
     <body>
-      
+   <div class="top">
+            <div class="side">       
+                <h2>“Your most unhappy customers are your most important source of learning”</h2>
+                <h3>-Bill Gates</h3>
+            </div>
+          
      <div class="out">
             <div class="register">
                
                 <h1>Register Now!</h1>
                 <hr>
                 <form action="#" id="register" method="post" target="_blank">
-
+                    
                         <label>Fullname</label>
                         <input type="text" name="lname" placeholder="Lastname" required /><br>
                         <input type="text" name="fname" placeholder="Firstname" required /><br>
                         <input type="text" name="mname" placeholder="Middlename" required /><br>
-                  
+                    
                         <br>
-                   
+                    
+                 
                         <label>Email</label><br>
                             <input type="email" name="e-mail" placeholder="Enter your email" required /><br>  
-                     
+                    
                             <br>
                             
-                            <label>Username</label><br>
-                            <input type="email" name="u-name" placeholder="Enter your username" required /><br>  
-                     
+                        <div>    
+                        <label>Username</label><br>
+                        <input type="email" name="u-name" placeholder="Enter your username" required /><br>  
+                        </div>
                             <br>
                   
                         <label>Password</label><br>
@@ -151,7 +200,7 @@
                             &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
                             <input type="reset" name="Reset" value="Reset" />
                             
-                            <p><a href="https://sharlyn-rancap-lspu.github.io/itel-203/login.html">Already have an account</a></p>
+                            <p><a href="welcome.php">Already have an account</a></p>
                             
                             <hr>
                             
@@ -162,12 +211,13 @@
                             <input type="checkbox"  name="translate" value="Filipino"/>
                             <label>Filipino</label>
                             
-                            
+                          
                       
             </form>
             </div>
      </div>
-        
+   
+      </div>        
        
     </body>
 </html>
